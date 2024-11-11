@@ -1,14 +1,17 @@
 # A Complete Step-by-Step Guide to REACT JS
 
-# Table of Contents
+## Table of Contents
 
 [Introduction](#introduction)
+[Importance of REACT JS](#importance-of-react-js)
+[Setting Up React JS: Step-by-Step Guide](#setting-up-react-js-step-by-step-guide)
 
-## Introduction 
+
+## Introduction {#introduction}
 
 React is a JavaScript library developed by Facebook for building user interfaces, specifically for single-page applications where content updates dynamically without reloading the whole page. Released in 2013, React has since become one of the most popular front-end frameworks due to its efficient approach to updating user interfaces and its component-based architecture, which promotes code reusability and maintainability.
 
-## Importance of REACT JS
+## Importance of REACT JS {#importance-of-react-js}
 
 - **Component-Based Structure**: React allows developers to break down the UI into small, reusable components. This modular approach makes it easier to manage large applications, as each component handles its own logic and can be reused across different parts of an application.
 
@@ -16,7 +19,7 @@ React is a JavaScript library developed by Facebook for building user interfaces
 
 - **Declarative Syntax**: In React, you declare what the UI should look like for any given state, and React automatically handles changes in the interface as state changes. This declarative approach simplifies code and reduces errors, as developers don’t have to manually manipulate the DOM.
 
-## Setting Up React JS: Step-by-Step Guide
+## Setting Up React JS: Step-by-Step Guide {#setting-up-react-js-step-by-step-guide}
 
 ### Prerequisite Apps
 
@@ -28,15 +31,13 @@ React is a JavaScript library developed by Facebook for building user interfaces
 
 1. **Step 1: Create a New React Application**
 
-- Open a Terminal: Open your command line (Terminal on macOS, Linux, Command Prompt or PowerShell on Windows).
+2. **Step 2: Start the Development Server**
 
-Run the Create React App Command:
+3. **Step 3: Explore the Folder Structure**
 
-Enter the following command:
-bash
-Copy code
-npx create-react-app my-app
-npx is a package runner that comes with npm (Node Package Manager). This command installs a starter React project in a directory named my-app.
-Replace "my-app" with your preferred project name.
-Project Setup Complete: Once the setup completes, a new folder will be created with the basic structure of a React application, along with necessary dependencies such as React, React DOM, and several development tools.
+4. **Step 4: Create and Use Components**
+
+## Core Function of REACT JS
+
+
 
