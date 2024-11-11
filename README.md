@@ -1,9 +1,7 @@
 # REACT JS
 
-## What is React JS?
+# Table of Contents
 
-Table of Contents
+[Introduction](#introduction)
 
-[Introduction ni Jei](#introduction-ni-jei)
-
-## Introduction ni Jei
+## Introduction 
