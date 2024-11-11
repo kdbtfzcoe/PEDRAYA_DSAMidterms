@@ -2,9 +2,9 @@
 
 ## Table of Contents
 
-[Introduction](#introduction)
-[Importance of REACT JS](#importance-of-react-js)
-[Setting Up React JS: Step-by-Step Guide](#setting-up-react-js-step-by-step-guide)
+- [Introduction](#introduction)
+- [Importance of REACT JS](#importance-of-react-js)
+- [Setting Up React JS: Step-by-Step Guide](#setting-up-react-js-step-by-step-guide)
 
 
 ## Introduction 
