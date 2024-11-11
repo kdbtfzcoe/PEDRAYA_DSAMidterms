@@ -10,6 +10,8 @@ React is a JavaScript library developed by Facebook for building user interfaces
 
 ## Importance of REACT JS
 
-Component-Based Structure: React allows developers to break down the UI into small, reusable components. This modular approach makes it easier to manage large applications, as each component handles its own logic and can be reused across different parts of an application.
-Virtual DOM for Optimized Performance: React employs a virtual DOM, a lightweight copy of the actual DOM (Document Object Model). Instead of updating the entire page, React only updates the components that have changed. This reduces the processing power needed and provides smoother, faster UI updates.
-Declarative Syntax: In React, you declare what the UI should look like for any given state, and React automatically handles changes in the interface as state changes. This declarative approach simplifies code and reduces errors, as developers don’t have to manually manipulate the DOM.
+- **Component-Based Structure**: React allows developers to break down the UI into small, reusable components. This modular approach makes it easier to manage large applications, as each component handles its own logic and can be reused across different parts of an application.
+
+- **Virtual DOM for Optimized Performance**: React employs a virtual DOM, a lightweight copy of the actual DOM (Document Object Model). Instead of updating the entire page, React only updates the components that have changed. This reduces the processing power needed and provides smoother, faster UI updates.
+
+- **Declarative Syntax**: In React, you declare what the UI should look like for any given state, and React automatically handles changes in the interface as state changes. This declarative approach simplifies code and reduces errors, as developers don’t have to manually manipulate the DOM.
