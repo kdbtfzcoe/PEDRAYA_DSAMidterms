@@ -113,7 +113,7 @@ export default App;
 2. This is a basic functional component. It returns `JSX/`(JavaScript XML), which is a syntax that looks like HTML but can be used within JavaScript code.
 
 #### **Modifying Your Component**
-Change the content inside the <h1> tag to customize the app, for example:
+Change the content inside the heading (<h1>) tag to customize the app, for example:
 
 ```bash
 javascript
@@ -131,7 +131,6 @@ React allows you to break down your UI into multiple smaller components. Here’
 8. **Step 8: Building for Production**:
 
 ## React JS: A Quick Recap of Its Core Functions
-
 
 ## Conclusion
 
