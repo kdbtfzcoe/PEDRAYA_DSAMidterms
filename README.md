@@ -110,7 +110,19 @@ function App() {
 export default App;
 ```
 
+2. This is a basic functional component. It returns `JSX/`(JavaScript XML), which is a syntax that looks like HTML but can be used within JavaScript code.
+
+#### **Modifying Your Component**
+Change the content inside the <h1> tag to customize the app, for example:
+
+```bash
+javascript
+<h1>Welcome to My First React App!</h1>
+```
+
 5. **Adding More Components**:
+
+React allows you to break down your UI into multiple smaller components. Here’s how you can create a new one:
 
 6. **Step 6: Using State in React**:
 
