@@ -24,9 +24,9 @@ React is a JavaScript library developed by Facebook for building user interfaces
 
 ### Prerequisite Apps
 
-- **Install Node.js**: Ensure that you have Node.js installed, as React relies on Node’s package manager (npm) to install dependencies. You can download Node.js from the official Node.js website.
+- **Install Node.js**: Ensure that you have Node.js installed, as React relies on Node’s package manager (npm) to install dependencies. You can download Node.js from the official [Node.js website](https://nodejs.org/en).
 
-- **Install a Code Editor**: It’s recommended to use a code editor like Visual Studio Code to make development easier.
+- **Install a Code Editor**: It’s recommended to use a code editor like [Visual Studio Code](https://code.visualstudio.com/) to make development easier.
 
 ### Step-by-Step Installation
 
