@@ -38,8 +38,10 @@ React is mainly used for building single-page applications (SPAs) and interactiv
 
 Verify installation: 
 
-> node -v
-> npm -v
+```bash
+node -v
+npm -v
+```
 
 - **Install a Code Editor**: It is recommended to use a code editor like [Visual Studio Code](https://code.visualstudio.com/) to make development easier.
 
