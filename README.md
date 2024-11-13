@@ -5,9 +5,8 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Importance of REACT JS](#importance-of-react-js)
+- [Importance of React JS](#importance-of-react-js)
 - [Setting Up React JS: Step-by-Step Guide](#setting-up-react-js-step-by-step-guide)
-- [React JS: A Quick Recap of Its Core Functions](#react-js-a-quick-recap-of-its-core-functions)
 - [Conclusion](#conclusion)
 
 
@@ -19,7 +18,7 @@ React is a JavaScript library developed by Facebook for building user interfaces
 
 React is mainly used for building single-page applications (SPAs) and interactive user interfaces. It powers dynamic web content, where users interact with elements in real-time, without requiring page reloads. It is also widely used for front-end development in various industries, including e-commerce, social media, and streaming services.
 
-## Importance of REACT JS 
+## Importance of React JS 
 
 - **Component-Based Structure**: React allows developers to break down the UI into small, reusable components. This modular approach makes it easier to manage large applications, as each component handles its own logic and can be reused across different parts of an application.
 
@@ -86,23 +85,38 @@ npm start
 
 This command will open your browser and load your new React app at `http://localhost:3000`
 
-4. **Understanding React Components**: 
+4. **Understanding the Basics of React Components**: 
 
 React is built around the idea of components. Each component is like a building block of the app, and you can think of it as a small, reusable piece of the UI.
 
+Note: A component is a piece of the UI (user interface) that has its own logic and appearance. A component can be as small as a button, or as large as an entire page.
+
 #### **Creating Your First Component**
 
-1. Inside the `src/` folder, you’ll see a file named `App.js/`. This is the main component of your app. Open it, and you’ll see something like this:
+1. Inside the `src/` folder, you’ll see a file named `App.js`. This is the main component of your app. Open it, and you’ll see something like this:
 
 ```bash
-javascript
 import React from 'react';
+import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello, React!</h1>
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
@@ -110,27 +124,171 @@ function App() {
 export default App;
 ```
 
-2. This is a basic functional component. It returns `JSX/`(JavaScript XML), which is a syntax that looks like HTML but can be used within JavaScript code.
+2. This is a basic functional component. It returns `JSX`(JavaScript XML), which is a syntax that looks like HTML but can be used within JavaScript code.
 
 #### **Modifying Your Component**
-Change the content inside the heading (h1) tag to customize the app, for example:
+Change the content to customize the app, for example:
 
 ```bash
-javascript
-<h1>Welcome to My First React App!</h1>
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1> Hello, Universe! </h1>
+      </header>
+    </div>
+  );
+}
+
+export default App;
 ```
 
 5. **Adding More Components**:
 
 React allows you to break down your UI into multiple smaller components. Here’s how you can create a new one:
 
-6. **Step 6: Using State in React**:
+1. Inside the `src/` folder, create a new file called `Greeting.js`:
 
-7. **Step 7: Styling Your App**:
+```bash
+import React from 'react';
 
-8. **Step 8: Building for Production**:
+function Greeting() {
+  return <p>Hello, welcome to the world of React!</p>;
+}
 
-## React JS: A Quick Recap of Its Core Functions
+export default Greeting;
+```
+
+2. Now, import and use the Greeting component in your `App.js` file:
+
+```bash
+import React from 'react';
+import Greeting from './Greeting';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <h1>Welcome to My First React App!</h1>
+      <Greeting />
+    </div>
+  );
+}
+
+export default App;
+```
+
+Now, your app will display both the h1 tag and the new greeting message from the Greeting component!
+
+6. **Step 6: Adding Styles in Your App in React**:
+
+React does not come with a built-in style library, but you can style your app using standard CSS.
+
+1. In React, you specify a CSS class with `className`. It works the same way as the HTML `class` attribute:
+
+```bash
+<img className="avatar" />
+```
+
+2. Then you write the CSS rules for it in a separate CSS file:
+
+```bash
+.avatar {
+  border-radius: 50%;
+}
+```
+
+Note: React does not prescribe how you add CSS files. In the simplest case, you will add a `<link>` tag to your HTML.
+
+7. **Step 7: Displaying a Variable in JSX**:
+
+JSX allows you to insert JavaScript variables into HTML-like syntax. You can use curly braces `{}` to embed variables or expressions inside your JSX.
+
+#### Example 1:
+
+```jsx
+return (
+  <h1>
+    {user.name}
+  </h1>
+);
+```
+
+#### Example 2: 
+
+```jsx
+return (
+  <img
+    className="avatar"
+    src={user.imageUrl}
+  />
+);
+```
+
+In this example, `src={user.imageUrl}` uses the value from `user.imageUrl` and passes it as the `src` attribute of the `img` element.
+
+
+8. **Step 8: Conditional Rendering in React**:
+
+In React, you use regular JavaScript techniques for conditional rendering.
+
+#### Example 1: Using `if` statement
+
+You can use an `if` statement to conditionally render JSX:
+
+```jsx
+let content;
+if (isLoggedIn) {
+  content = <AdminPanel />;
+} else {
+  content = <LoginForm />;
+}
+return (
+  <div>
+    {content}
+  </div>
+);
+```
+
+#### Example 2: Using the conditional `?` operator
+
+```jsx
+<div>
+  {isLoggedIn ? (
+    <AdminPanel />
+  ) : (
+    <LoginForm />
+  )}
+</div>
+```
+
+These methods also work for conditionally setting attributes. If you're new to this syntax, start with `if-else`.
+
+9. **Step 9: Responding to events in React**:
+
+You can respond to events by creating event handler functions inside your components.
+
+#### Example: Handling a Click Event
+
+```jsx
+function MyButton() {
+  function handleClick() {
+    alert('You clicked me!');
+  }
+
+  return (
+    <button onClick={handleClick}>
+      Click me
+    </button>
+  );
+}
+```
+
+Notice that onClick={handleClick} does not have parentheses. You pass the function itself, and React will call it when the button is clicked.
 
 ## Conclusion
 
