@@ -1,6 +1,6 @@
-# A Complete Step-by-Step Guide to REACT JS
-
 ![react](react.png)
+
+# A Complete Step-by-Step Guide to REACT JS
 
 ## Table of Contents
 
