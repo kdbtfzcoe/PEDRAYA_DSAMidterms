@@ -49,7 +49,7 @@ npm -v
 
 ### **Step 1: Create a New React Application**
 
-Once you have Node.js set up, you can easily create a React application using Create React App, a tool that sets up all necessary configurations for you.
+Once you have `Node.js` set up, you can easily create a React application using Create React App, a tool that sets up all necessary configurations for you.
 
 Open your terminal and run the following command:
 
@@ -57,7 +57,7 @@ Open your terminal and run the following command:
 npx create-react-app my-first-react-app
 ```
 
-This will create a new folder called my-first-react-app and set up all the files and dependencies needed for your React project.
+This will create a new folder called `my-first-react-app` and set up all the files and dependencies needed for your React project.
 
 2. **Step 2: Navigate to Your Project Folder**
 
@@ -75,7 +75,7 @@ Inside this folder, you will find:
 
 - `package.json` – Contains metadata about the project and the dependencies.
 
-3. **Step 3: Start the Development Server**
+### **Step 3: Start the Development Server**
 
 To see your app in action, start the development server:
 
@@ -289,6 +289,56 @@ function MyButton() {
 ```
 
 Notice that onClick={handleClick} does not have parentheses. You pass the function itself, and React will call it when the button is clicked.
+
+### **Step 10: Updating the screen in React**:
+
+There are situations where you want your component to keep track of specific information and display it dynamically. For instance, you might need to count how many times a button has been clicked. To achieve this, you can incorporate state into your component, allowing it to "remember" and update data as needed.
+
+1. First, import `useState` from React: 
+
+```jsx
+import { useState } from 'react';
+```
+
+2. Now you can declare a state variable inside your component:
+
+```jsx
+function MyButton() {
+  const [count, setCount] = useState(0);
+  // ...
+```
+
+The `useState` hook provides two things: the current state (e.g., `count`) and a function to update it (e.g., `setCount`). You can name them anything, but the common convention is `[value, setValue]`.
+
+Initially, the state (like `count`) is set to the value passed to `useState()` (e.g., `0`). To update the state, call the update function (e.g., `setCount`) with the new value.
+
+For example, clicking a button can increment the counter like this:
+
+```jsx
+function MyButton() {
+  const [count, setCount] = useState(0);
+
+  function handleClick() {
+    setCount(count + 1);
+  }
+
+  return (
+    <button onClick={handleClick}>
+      Clicked {count} times
+    </button>
+  );
+}
+```
+
+When React calls your component function again after the state is updated, the value of `count` will reflect the new state. For example:
+
+- After the first update, `count` becomes `1`.
+- On the next update, it will be `2`.
+- And so on, incrementing each time the state is updated.
+
+React re-renders the component with the latest state, ensuring the UI stays in sync with the changes.
+
+Note: `Hooks` are functions starting with `use.` `useState` is a built-in Hook provided by React. you can find other built-in `Hooks` in the [API reference](https://react.dev/reference/react-dom). You can also write your own Hooks by combining the existing ones.
 
 ## Conclusion
 
