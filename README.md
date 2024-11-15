@@ -91,7 +91,7 @@ React is built around the idea of components. Each component is like a building 
 
 Note: A component is a piece of the UI (user interface) that has its own logic and appearance. A component can be as small as a button, or as large as an entire page.
 
-##### **Creating Your First Component**
+- **Creating Your First Component**
 
 1. Inside the `src/` folder, you’ll see a file named `App.js`. This is the main component of your app. Open it, and you’ll see something like this:
 
@@ -126,7 +126,7 @@ export default App;
 
 2. This is a basic functional component. It returns `JSX`(JavaScript XML), which is a syntax that looks like HTML but can be used within JavaScript code.
 
-##### **Modifying Your Component**
+- **Modifying Your Component**
 
 Change the content to customize the app, for example:
 
@@ -148,7 +148,7 @@ function App() {
 export default App;
 ```
 
-#### **Adding More Components**:
+- **Adding More Components**:
 
 React allows you to break down your UI into multiple smaller components. Here’s how you can create a new one:
 
@@ -183,13 +183,13 @@ function App() {
 export default App;
 ```
 
-Now, your app will display both the h1 tag and the new greeting message from the Greeting component!
+Now, your app will display both the `h1` tag and the new `greeting` message from the Greeting component!
 
 ### **Step 6: Adding Styles in Your App in React**:
 
 React does not come with a built-in style library, but you can style your app using standard CSS.
 
-1. In React, you specify a CSS class with `className`. It works the same way as the HTML `class` attribute:
+1. In React, you specify a CSS class with `className`. It works the same way as the HTML class` attribute:
 
 ```jsx
 <img className="avatar" />
