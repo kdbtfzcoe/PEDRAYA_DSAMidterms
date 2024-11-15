@@ -197,7 +197,7 @@ React does not come with a built-in style library, but you can style your app us
 
 2. Then you write the CSS rules for it in a separate CSS file:
 
-```jsx
+```css
 .avatar {
   border-radius: 50%;
 }
