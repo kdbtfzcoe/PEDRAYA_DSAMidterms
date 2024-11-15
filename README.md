@@ -45,9 +45,9 @@ npm -v
 
 - **Install a Code Editor**: It is recommended to use a code editor like [Visual Studio Code](https://code.visualstudio.com/) to make development easier.
 
-### Step-by-Step Installation
+## Step-by-Step Installation
 
-1. **Step 1: Create a New React Application**
+### **Step 1: Create a New React Application**
 
 Once you have Node.js set up, you can easily create a React application using Create React App, a tool that sets up all necessary configurations for you.
 
@@ -85,7 +85,7 @@ npm start
 
 This command will open your browser and load your new React app at `http://localhost:3000`
 
-4. **Understanding the Basics of React Components**: 
+### **Understanding the Basics of React Components**: 
 
 React is built around the idea of components. Each component is like a building block of the app, and you can think of it as a small, reusable piece of the UI.
 
@@ -147,7 +147,7 @@ function App() {
 export default App;
 ```
 
-5. **Adding More Components**:
+### **Adding More Components**:
 
 React allows you to break down your UI into multiple smaller components. Here’s how you can create a new one:
 
@@ -184,7 +184,7 @@ export default App;
 
 Now, your app will display both the h1 tag and the new greeting message from the Greeting component!
 
-6. **Step 6: Adding Styles in Your App in React**:
+### **Step 6: Adding Styles in Your App in React**:
 
 React does not come with a built-in style library, but you can style your app using standard CSS.
 
@@ -204,7 +204,7 @@ React does not come with a built-in style library, but you can style your app us
 
 Note: React does not prescribe how you add CSS files. In the simplest case, you will add a `<link>` tag to your HTML.
 
-7. **Step 7: Displaying a Variable in JSX**:
+### **Step 7: Displaying a Variable in JSX**:
 
 JSX allows you to insert JavaScript variables into HTML-like syntax. You can use curly braces `{}` to embed variables or expressions inside your JSX.
 
@@ -232,7 +232,7 @@ return (
 In this example, `src={user.imageUrl}` uses the value from `user.imageUrl` and passes it as the `src` attribute of the `img` element.
 
 
-8. **Step 8: Conditional Rendering in React**:
+### **Step 8: Conditional Rendering in React**:
 
 In React, you use regular JavaScript techniques for conditional rendering.
 
@@ -268,7 +268,7 @@ return (
 
 These methods also work for conditionally setting attributes. If you're new to this syntax, start with `if-else`.
 
-9. **Step 9: Responding to events in React**:
+### **Step 9: Responding to events in React**:
 
 You can respond to events by creating event handler functions inside your components.
 
